@@ -1,11 +1,3 @@
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-      </div>
-    {% endif %}nav# -----------------------------------------------------------------------------
-# Site settings
-# -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Zitha
