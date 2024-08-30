@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted for INTERSPEECH 2024!
+Paper accepted for INTERSPEECH 2024!✨ 😄
