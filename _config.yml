@@ -80,8 +80,8 @@ facebook_id: # your facebook id
 flickr_id: # your flickr id
 github_username: zithasasindran# your GitHub user name
 gitlab_username: # your GitLab user name
-ieee_id: # your ieeexplore.ieee.org/author/id
-inspirehep_id: 1010907 # Inspire HEP author ID
+ieee_id: 37088880570# your ieeexplore.ieee.org/author/id
+inspirehep_id: # Inspire HEP author ID
 instagram_id: # your instagram id
 kaggle_id: # your kaggle id
 keybase_username: # your keybase user name
@@ -112,8 +112,7 @@ x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
