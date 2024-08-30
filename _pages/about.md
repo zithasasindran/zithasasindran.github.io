@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Machine Learning Researcher,
-Generative AI and Federated Learning Enthusiast
+subtitle: Machine Learning Researcher, Generative AI and Federated Learning Enthusiast
 
 profile:
   align: right
