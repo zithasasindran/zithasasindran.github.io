@@ -2,7 +2,8 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Machine Learning Researcher,
+Generative AI and Federated Learning Enthusiast
 
 profile:
   align: right
