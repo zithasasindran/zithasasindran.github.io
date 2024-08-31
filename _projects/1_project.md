@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Ed-Fed: Federated Learning framework
-description: A generic FL framework for real edge devices
+title: project
+description: Ed-Fed: A generic FL framework for real edge devices
 img: assets/img/12.jpg
 importance: 1
 category: work
