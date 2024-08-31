@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Presented our work on "Towards a Resource-Efficient Semi-Asynchronous Federated Learning for Heterogeneous Devices" at NCC 2024.
