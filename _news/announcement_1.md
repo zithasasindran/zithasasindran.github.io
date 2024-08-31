@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Paper accepted for INTERSPEECH 2024!✨ 😄
+New accepted paper “SeMaScore : a new evaluation metric for automatic speech recognition tasks” [Accepted to INTERSPEECH 2024]!✨ 😄
