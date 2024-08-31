@@ -21,3 +21,6 @@ I am Zitha Sasindran, a passionate researcher with a Ph.D. from the Indian Insti
 My research spans across federated learning, speech recognition, and computer vision, with a recent focus on integrating generative AI into these domains. From building on-device learning frameworks for automatic speech recognition (ASR) on mobile devices to pioneering novel evaluation metrics for ASR systems, my work is grounded in creating solutions that address the challenges of resource-constrained environments.
 
 Beyond research, I am committed to advancing the field through collaboration and mentorship, having led projects like the Boeing speech-to-text initiative and developed systems that significantly improve accessibility and user experience.
+
+I am open to collaborate on interesting projects, please feel free to reach out.
+
