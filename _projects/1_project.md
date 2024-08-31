@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Ed-Fed: A federated learning framework
-description: with background image
+title: project 1
+description: Ed-Fed: A federated learning framework
 img: assets/img/12.jpg
 importance: 1
 category: work
