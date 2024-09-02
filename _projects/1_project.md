@@ -13,25 +13,11 @@ Federated learning (FL) has evolved as a prominent method for edge devices to co
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Ed-Fed.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Our Ed-Fed Framework: Depicting the essential components - server, client, and communication protocol. The green dotted lines represent interactions between client devices and the client selection algorithm. Clients send necessary information for the algorithm, and the server notifies them of their selection status. Red cross shows the clients not selected for FL round. Blue lines indicate the transmission of global weights from the server to clients in each round. The brown dotted line illustrates the interaction with the server strategy algorithm, where selected clients send weights that are aggregated to form the global weights.
 </div>
 
 The above figure shows a general FL setting. It consists of a set of clients (edge devices) and a server. The server maintains a global model, whose copy is initially sent to a subset of clients. These clients train their local model using the local data and communicate back the updated weights to the server. The server aggregates the weights using a strategy. This process is repeated for several rounds until the global model achieves a better accuracy.
@@ -41,6 +27,15 @@ The above figure shows a general FL setting. It consists of a set of clients (ed
 Now, we will go through our Ed-Fed framework. We first discuss the methodology for facilitating on-device training and weight updation of models in the clients, followed by a brief overview on the communication protocol and the server-side algorithms used.
 
 **Client**
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/FL_tflite_new.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+Model with eight functions that allow us to successfully train the model on the device, and perform FL related functions for the clients in both single system simulation and Android based clients
+</div>
 
 The above Figure depicts the optimized model with eight signature functions that allow us to successfully train the model on the device, and perform FL related functions in the mobile devices. Along with the existing signature functions such as train, evaluate, save, load, and calculate_loss, we build three new signature functions:
 
@@ -64,7 +59,17 @@ The server strategy algorithms aggregates the weights obtained from the selected
 
 **Results**
 
-Global_model_WER
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Validation_accuracy.jpg" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+Performance of Ed-Fed on Image classification: The performance of global model at each round is assessed using the global validation set, with the reported average validation accuracy.
+</div>
+
+
+
 
 The above figure depicts the findings obtained on deployment of our Ed-Fed framework on multiple phones. The experiment is carried for 8 rounds on 4 mobile devices. In each round, 3 clients are selected. The round 0 in the figure refers to the initial global weights. All the checkpoints that are obtained at the end of each FL round are put to the test on a global test set. As could be predicted, the WER declines as the number of FL rounds grow.
 
