@@ -1,8 +1,9 @@
 ---
 layout: page
-title: 1
+title: project
 description: Ed-Fed framework
 img: assets/img/12.jpg
+importance: 1
 related_publications: true
 ---
 
