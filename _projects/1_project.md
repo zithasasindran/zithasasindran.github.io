@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ed-Fed
-description: Ed-Fed FL framework
+description: A generic federated learning framework
 img: assets/img/12.jpg
 importance: 1
 related_publications: true
