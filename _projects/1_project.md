@@ -11,8 +11,8 @@ Federated learning (FL) has evolved as a prominent method for edge devices to co
 
 **What is Federated Learning?**
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Ed-Fed.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -28,8 +28,8 @@ Now, we will go through our Ed-Fed framework. We first discuss the methodology f
 
 **Client**
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FL_tflite_new.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
