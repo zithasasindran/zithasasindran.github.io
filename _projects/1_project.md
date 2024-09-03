@@ -61,6 +61,9 @@ The server strategy algorithms aggregates the weights obtained from the selected
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Avg-WER.JPG" title="results2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Validation_accuracy.jpg" title="results1" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
