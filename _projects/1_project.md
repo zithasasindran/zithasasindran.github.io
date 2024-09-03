@@ -32,9 +32,12 @@ Now, we will go through our Ed-Fed framework{% cite sasindran2023ed %}. We first
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/FL_tflite_new.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
     </div>
+        <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Android_app.JPG" title="Android application" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
 <div class="caption">
-Model with eight functions that allow us to successfully train the model on the device, and perform FL related functions for the clients in both single system simulation and Android based clients
+(a) Model with eight functions that allow us to successfully train the model on the device, and perform FL related functions for the clients in both single system simulation and Android based clients (b) Android application developed for FL
 </div>
 
 The above Figure depicts the optimized model with eight signature functions that allow us to successfully train the model on the device, and perform FL related functions in the mobile devices. Along with the existing signature functions such as train, evaluate, save, load, and calculate_loss, we build three new signature functions:
@@ -61,57 +64,29 @@ The server strategy algorithms aggregates the weights obtained from the selected
 
 <div class="row">
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Avg-WER.JPG" title="results2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Avg-WER.JPG" title="results1" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-6 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Validation_accuracy.jpg" title="results1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Validation_accuracy.jpg" title="results2" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-Performance of Ed-Fed on Image classification: The performance of global model at each round is assessed using the global validation set, with the reported average validation accuracy.
+Performance of Ed-Fed on Automatic Speech Recogntion (ASR) and Image classification tasks: The performance of global model at each round is assessed using the global validation set, with the reported average 
+ metric used for evaluation.
 </div>
 
+The results obtained from running Ed-Fed on system-based simulations for ASR and image classification tasks is given in the above figure. Here, we compared the impact of using various server strategy algorithms and the best one for each tasks.
 
-
-The above figure depicts the findings obtained on deployment of our Ed-Fed framework on multiple phones. The experiment is carried for 8 rounds on 4 mobile devices. In each round, 3 clients are selected. The round 0 in the figure refers to the initial global weights. All the checkpoints that are obtained at the end of each FL round are put to the test on a global test set. As could be predicted, the WER declines as the number of FL rounds grow.
-
-
-
-
-
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/Phone_results.JPG" title="results3" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+Evaluation of Ed-Fed Performance on Android-based Mobile Phones for ASR tasks
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+The above figures depicts the findings obtained on deployment of our Ed-Fed framework on multiple phones. The experiment is carried for 8 rounds on 4 mobile devices. In each round, 3 clients are selected. The round 0 in the figure refers to the initial global weights. All the checkpoints that are obtained at the end of each FL round are put to the test on a global test set. As could be predicted, the WER declines as the number of FL rounds grow. For more details, kindly have a look at our paper {% cite sasindran2023ed %} and reach out to me.
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
 
 {% endraw %}
