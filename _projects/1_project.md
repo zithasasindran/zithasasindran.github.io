@@ -24,7 +24,7 @@ The above figure shows a general FL setting. It consists of a set of clients (ed
 
 **Ed-Fed Framework:**
 
-Now, we will go through our Ed-Fed framework. We first discuss the methodology for facilitating on-device training and weight updation of models in the clients, followed by a brief overview on the communication protocol and the server-side algorithms used.
+Now, we will go through our Ed-Fed framework{% cite sasindran2023ed %}. We first discuss the methodology for facilitating on-device training and weight updation of models in the clients, followed by a brief overview on the communication protocol and the server-side algorithms used.
 
 **Client**
 
