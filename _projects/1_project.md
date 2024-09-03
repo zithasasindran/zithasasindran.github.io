@@ -60,10 +60,10 @@ The server strategy algorithms aggregates the weights obtained from the selected
 **Results**
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Avg-WER.JPG" title="results2" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Validation_accuracy.jpg" title="results1" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -71,14 +71,6 @@ The server strategy algorithms aggregates the weights obtained from the selected
 Performance of Ed-Fed on Image classification: The performance of global model at each round is assessed using the global validation set, with the reported average validation accuracy.
 </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Avg-WER.JPG" title="results2" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-Performance of Ed-Fed on Image classification: The performance of global model at each round is assessed using the global validation set, with the reported average validation accuracy.
-</div>
 
 
 The above figure depicts the findings obtained on deployment of our Ed-Fed framework on multiple phones. The experiment is carried for 8 rounds on 4 mobile devices. In each round, 3 clients are selected. The round 0 in the figure refers to the initial global weights. All the checkpoints that are obtained at the end of each FL round are put to the test on a global test set. As could be predicted, the WER declines as the number of FL rounds grow.
