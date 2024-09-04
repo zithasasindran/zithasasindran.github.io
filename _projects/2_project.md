@@ -1,7 +1,7 @@
 ---
 layout: page
-title: mobileasr
-description: a project with a background image and giscus comments
+title: MobileASR
+description:  A resource-aware on-device training methodology for ASR models on mobilephones
 img: assets/img/3.jpg
 importance: 2
 category: work
