@@ -24,7 +24,7 @@ However, implementing such functionalities on mobile devices is limited by facto
     </div>
 </div>
 <div class="caption">
-Model with dix functions that allow us to successfully train the model on the device
+Model with six functions that allow us to successfully train the model on the device
 </div>
 
 **Module for deployment**
