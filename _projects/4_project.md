@@ -1,7 +1,7 @@
 ---
 layout: page
-title: MobileASR
-description: A resource-aware on-device training methodology for ASR models on mobilephones
+title: RE-SAFL
+description: A resource-efficient semi-asynchronous FL framework
 img: assets/img/Ondevicelearning.JPG
 importance: 2
 related_publications: true
