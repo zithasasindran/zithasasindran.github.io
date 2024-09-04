@@ -33,7 +33,7 @@ Now, we will go through our Ed-Fed framework{% cite sasindran2023ed %}. We first
         {% include figure.liquid loading="eager" path="assets/img/FL_tflite_new.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
     </div>
         <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Android_app.JPG" title="Android application" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Android_app.JPG" title="Android_application" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
