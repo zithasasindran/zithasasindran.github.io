@@ -8,22 +8,23 @@ related_publications: true
 ---
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-4 mt-3 mt-md-0">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/re-safl.jpg" title="re-safl" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption"> On-device learning
+<div class="caption"> Our semi-asynchronous FL framework
 </div>
 
 
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/re-safl-stickdiagram.JPG" title="Ed-fed" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-Model with dix functions that allow us to successfully train the model on the device
+Illustration of the interaction between Client i and the server during a specific
+round r using our methodology.
 </div>
 
 
