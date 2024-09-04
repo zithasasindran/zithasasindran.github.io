@@ -28,6 +28,7 @@ Model with dix functions that allow us to successfully train the model on the de
 </div>
 
 **Module for deployment**
+
 A crucial step involves the conversion of the baseline ASR model into a memory-efficient and optimized format suitable for deployment on mobile platforms. We employed six key functions to interact with the model when deployed on devices and these functions are used to specify the inputs, such as training data, inference data, and the path to the checkpoint file, as well as the outputs, including loss values and the output probability matrix, as illustrated in the above figure. These functions can be customized based on our requirement. For instance, we built a function to extract the CTC loss value. Additionally, we utilize another function to retrieve parameter information from the model, which is subsequently employed in our resource-efficient model selection approach. The train function is responsible for effectively training the model on a batch or mini-batch of inputs, ensuring that training can be conducted directly on the mobile device.
 
 
@@ -45,6 +46,7 @@ A crucial step involves the conversion of the baseline ASR model into a memory-e
 
 
 **Results**
+
 We examined the impact of training on the memory of a OnePlus 7T phone that ran on Android 10 and had 5.3GB of available RAM out of 8GB. Our resource-aware model selection algorithm selected the best sub-model for training. We evaluate our on-device training procedure on multiple accents. We conduct our experiment on the dataset for accents for training and testing the model. Figure (b) shows the WER trend versus epochs for the first round of training. The trend indicates that WER values are monotonically decreasing with the increase in training epochs. The * symbol denotes the epoch where, the minimum metric value (WER) or when the battery percentage or RAM is below the threshold is obtained and the checkpoints are saved for the next round. We see that the steepest decrease in metric value is in the initial round. This happens when the model sees user data for the first time. As we continue, the average WER goes down more slowly. The speed of this improvement depends on the data we use. If we have new words or phrases in the data for a round, the model learns more and the test set WER gets better. Interestingly, we did not find any specific pattern related to accents or gender. It appears like these factors are influenced more by the data we use in each round rather than following a set pattern. This highlights the importance of using different data in every round. When the model encounters varied data each time, it learns better and becomes more personalized to the user's voice and unique characteristics.
 
 For more details, kindly have a look at our paper {% cite sasindran2023mobileasr %} and reach out to me for further details.
