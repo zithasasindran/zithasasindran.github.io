@@ -2,14 +2,14 @@
 layout: page
 title: RE-SAFL
 description: A resource-efficient semi-asynchronous FL framework
-img: assets/img/re-safl.JPG
+img: assets/img/re-safl.jpg
 importance: 4
 related_publications: true
 ---
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/re-safl.JPG" title="re-safl" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/re-safl.jpg" title="re-safl" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption"> On-device learning
