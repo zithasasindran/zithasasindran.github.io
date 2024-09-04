@@ -1,9 +1,9 @@
 ---
 layout: page
-title: MobileASR
-description: A resource-aware on-device training methodology for ASR models on mobilephones
+title: Smart client selection
+description: A smart client selection algorithm for FL
 img: assets/img/Ondevicelearning.JPG
-importance: 2
+importance: 3
 related_publications: true
 ---
 
@@ -15,8 +15,20 @@ related_publications: true
 <div class="caption"> On-device learning
 </div>
 
-On-device training is a process of training machine learning models directly on the user’s device, such as a mobile phone, without relying on cloud-based infrastructure as shown in the figure. The idea is to preserve data privacy by keeping sensitive data on the user’s device such as audio containing personally identifiable information. Over time, as the user interacts with the system, the model fine-tunes its recognition capabilities to align specifically with the unique nuances of that user’s speech. This personalized adaptation enhances the accuracy and efficiency of the speech recognition system, delivering a more customized and user-centric experience. Additionally, on-device training not only preserves user privacy but also aligns with the growing emphasis on data security and user control over personal information.
-However, implementing such functionalities on mobile devices is limited by factors such as CPU speed, memory, and storage availability, as well as the quality of on-device training data due to the use of cheap sensor hardware. Hence, training the models on mobile devices requires efficient algorithms that can handle the available limited resources available. Furthermore, the personalization process should not affect the device’s normal functioning including consuming too much energy, as this can negatively impact the user experience. As a result, training ASR models on lightweight systems is a challenge in itself. A wide range of real-world problems can benefit from implementing a on-device training framework for ASR models on mobile phones. For instance, it can facilitate the adaptation of the user’s voice for voice-controlled home automation or assistive technologies for individuals with speech impairments.
+FL approach has emerged as a leading decentralized paradigm for training machine learning models, utilizing local data available on multiple client devices and thus ensuring data privacy and security. The distributed nature of FL offers immense potential for scalable and privacy-preserving model training across vast network of edge devices, such as mobile phones, and IoT devices.
+
+One of the key challenges in FL revolves around the effective selection of suitable k clients from N available clients to participate in the training process, given their diverse hardware and specifications. This may potentially result in varying model training time among various devices. In a conventional FL setup, the server awaits model updates from all participating clients before proceeding to the next step. However, this synchronous nature of FL creates a potential bottleneck, as the overall FL process is slowed down by the variability in the training time required by each client.
+This variability arises from factors such as the computational power of client devices and communication delays during the transfer of model weights to the server. These delays, commonly referred to as the ``straggler effect",  are primarily caused by clients with weaker network connections or limited computational capabilities. In FL, straggler devices refer to the participating client devices that take longer to complete their computations and send updates to the central server. This delay can cause synchronization problems and slow down the overall FL process. 
+
+**Motivation**
+
+At present, the most common client selection approach devised in FL setups involves the random selection of k clients from a pool of N clients. This approach works well in FL when there are no straggler devices. However, excluding straggler devices and choosing only resource-rich devices for a FL round to tackle this issue can undermine the generalization capabilities of the global model and fairness in the learning process. Therefore, this chapter seeks an answer to one important question - Is it possible to cleverly (or nicely) choose the k clients such that the difference in training time among clients is minimum. Also, there is a certain randomness associated with training time taken by the client devices, and this makes the whole process challenging. For instance, the system memory might either get freed up to speed up the training time or might reduce to slowdown. There can be events where the training process itself might be removed by the operating system (OS) due to lack of memory. We observe that system resources and training time share a non-linear relationship. This idea inspired us to use tools like neural network models to understand the hidden and complex relationships between the resource capabilities with the training time requirements. 
+
+**Our client selection algorithm**
+Considering the challenges involved in selecting the clients in FL to reduce the waiting times and efficiently managing straggler devices, we develop a resource-aware waiting time optimized
+client selection algorithm aimed at tackling these challenges. Our algorithm considers the resources accessible on each client device and assigns tasks adaptively based on their specific
+capabilities. Our approach Resource-aware waiting time optimized client selection algorithm comprises of three key phases - extraction of resource information, neural reward generation
+using neuralUCB, and the implementation of a resource-aware waiting time optimized algorithm.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
