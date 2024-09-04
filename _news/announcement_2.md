@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Successfully defended my thesis and got my Ph.D degree
+Successfully defended my Ph. D :)
