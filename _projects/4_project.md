@@ -3,7 +3,7 @@ layout: page
 title: RE-SAFL
 description: A resource-efficient semi-asynchronous FL framework
 img: assets/img/Ondevicelearning.JPG
-importance: 2
+importance: 4
 related_publications: true
 ---
 
