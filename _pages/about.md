@@ -15,12 +15,12 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+I am a researcher with a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I spent my time figuring out how to make machine learning work on resource-limited devices like IoT gadgets and mobile phones. Basically, I am all about building smart, scalable systems that actually work in the real world.
 
-I am Zitha Sasindran, a passionate researcher with a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I specialized in developing resource-efficient and scalable machine learning systems for IoT and embedded devices. My journey in academia has been driven by a deep interest in solving real-world problems and building practical, impactful systems.
+My research covers a mix of federated learning, speech recognition, and computer vision, with a recent obsession with weaving generative AI into these fields. Whether it’s designing on-device learning systems for speech recognition or coming up with new ways to evaluate ASR systems, I love solving complex problems, especially in resource-constrained environments.
 
-My research spans across federated learning, speech recognition, and computer vision, with a recent focus on integrating generative AI into these domains. From building on-device learning frameworks for automatic speech recognition (ASR) on mobile devices to pioneering novel evaluation metrics for ASR systems, my work is grounded in creating solutions that address the challenges of resource-constrained environments.
+I have led cool projects like the Boeing speech-to-text initiative and worked on tech that improves accessibility and the overall user experience. Besides research, I am all about collaboration, mentorship, and pushing the boundaries of what’s possible.
 
-Beyond research, I am committed to advancing the field through collaboration and mentorship, having led projects like the Boeing speech-to-text initiative and developed systems that significantly improve accessibility and user experience.
+If you’ve got a fun project or want to chat, I am always open to new ideas—feel free to reach out!
 
-I am open to collaborate on interesting projects, please feel free to reach out.
 
