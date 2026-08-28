@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New accepted paper “SeMaScore : a new evaluation metric for automatic speech recognition tasks” [Accepted to INTERSPEECH 2024]!✨ 😄
+New paper “Stepshield: When, not whether to intervene on rogue agents"✨ 😄
