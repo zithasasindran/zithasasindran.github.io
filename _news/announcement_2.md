@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2025-01-27
+date: 2026-05-27
 inline: true
 related_posts: false
 ---
-Peer reviewer for INTERSPEECH 2025✨ 
+Peer reviewer for SLT 2026✨ 
