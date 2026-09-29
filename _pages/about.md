@@ -15,12 +15,14 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am a researcher with a Ph.D. from the Indian Institute of Science (IISc), Bangalore, where I spent my time figuring out how to make machine learning work on resource-limited devices like IoT gadgets and mobile phones. Basically, I am all about building smart, scalable systems that actually work in the real world.
+I am an AI engineer and researcher based in Auckland, New Zealand. I build AI systems that work on messy, real-world data and hold up once they're deployed.
 
-My research covers a mix of federated learning, and  automatic speech recognition, with a recent obsession with weaving generative AI into these fields. Whether it’s designing on-device learning systems for speech recognition or coming up with new ways to evaluate ASR systems, I love solving complex problems, especially in resource-constrained environments.
+My work spans speech recognition, computer vision, federated and distributed learning, and large language models. I did my PhD at the Indian Institute of Science (IISc), Bangalore, on making machine learning work on resource-constrained devices, and led the Boeing-sponsored project that delivered an offline speech-to-text system for noisy aircraft cabins.
 
-I have led cool projects like the Boeing speech-to-text initiative and worked on tech that improves accessibility and the overall user experience. Besides research, I am all about collaboration, mentorship, and pushing the boundaries of what’s possible.
+These days I focus on making AI trustworthy. I have created LLM-based evaluation metrics (SeMaScore and H-eval), stress-tested production LLMs and AI agents at HandShakeAI, and co-authored StepShield, on when to intervene on rogue AI agents. As an independent reasearcher, I have built LLM agents and RAG systems, with evaluation and guardrails built in from the start.
 
-If you’ve got a fun project or want to chat, I am always open to new ideas—feel free to reach out!
+I also review for NeurIPS, ICASSP and INTERSPEECH, and enjoy mentoring engineers. I'm open to AI engineering and applied research roles in New Zealand, so feel free to reach out.
+
+If you’ve got a fun project or want to chat, I am always open to new ideas-feel free to reach out!
 
 
